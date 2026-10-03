@@ -1,0 +1,942 @@
+/* =====================================================
+   WEB PROGRAMMING 1
+   CSS GABUNGAN
+   Muhammad Fajri Alkafi
+   ===================================================== */
+
+
+/* =====================================================
+   RESET
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #222222;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+
+    background-color: #dbe7f6;
+
+    color: #1f3c88;
+
+    padding: 24px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #cccccc;
+
+}
+
+
+header h1 {
+
+    margin: 0 0 5px 0;
+
+}
+
+
+header p {
+
+    margin: 4px 0;
+
+}
+
+
+/* =====================================================
+   NAVIGATION DASAR
+   ===================================================== */
+
+nav {
+
+    background-color: #ffffff;
+
+    padding: 14px 20px;
+
+    border-bottom: 1px solid #cccccc;
+
+}
+
+
+/* Link navbar */
+
+nav a {
+
+    color: #1f4e79;
+
+    text-decoration: none;
+
+    margin-right: 16px;
+
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+   TOP LEFT
+   ===================================================== */
+
+body.top-left nav {
+
+    text-align: left;
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+   TOP CENTER
+   ===================================================== */
+
+body.top-center nav {
+
+    text-align: center;
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+   TOP RIGHT
+   ===================================================== */
+
+body.top-right nav {
+
+    text-align: right;
+
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+main {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 24px auto;
+
+}
+
+
+/* =====================================================
+   SECTION / CARD
+   ===================================================== */
+
+section {
+
+    background-color: #ffffff;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+}
+
+
+.card {
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.05);
+
+}
+
+
+section h2 {
+
+    margin-top: 0;
+
+    color: #1f4e79;
+
+}
+
+
+/* =====================================================
+   IMAGE
+   ===================================================== */
+
+img {
+
+    max-width: 160px;
+
+    border-radius: 8px;
+
+}
+
+
+figure {
+
+    margin: 20px 0;
+
+    text-align: center;
+
+}
+
+
+figcaption {
+
+    margin-top: 8px;
+
+    color: #666666;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   TABLE
+   ===================================================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 12px;
+
+}
+
+
+caption {
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+th,
+td {
+
+    border: 1px solid #cccccc;
+
+    padding: 10px;
+
+    text-align: left;
+
+}
+
+
+th {
+
+    background-color: #eef3f8;
+
+}
+
+
+/* =====================================================
+   LIST
+   ===================================================== */
+
+ul,
+ol {
+
+    padding-left: 25px;
+
+}
+
+
+li {
+
+    margin-bottom: 7px;
+
+}
+
+
+/* =====================================================
+   DESCRIPTION LIST
+   ===================================================== */
+
+dt {
+
+    font-weight: bold;
+
+    color: #1f4e79;
+
+    margin-top: 12px;
+
+}
+
+
+dd {
+
+    margin-left: 20px;
+
+}
+
+
+/* =====================================================
+   DETAILS
+   ===================================================== */
+
+details {
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    background-color: #f5f8fc;
+
+    border-radius: 6px;
+
+}
+
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   BUTTON
+   ===================================================== */
+
+.button {
+
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    margin: 5px;
+
+    background-color: #1f4e79;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+
+.button:hover {
+
+    background-color: #163958;
+
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+
+    background-color: #dbe7f6;
+
+    padding: 16px;
+
+    text-align: center;
+
+    margin-top: 24px;
+
+}
+
+
+footer a {
+
+    color: #1f4e79;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   LAYOUT EXPERIMENT
+   FLEXBOX
+   ===================================================== */
+
+.page-layout {
+
+    display: flex;
+
+    gap: 20px;
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 24px auto;
+
+    align-items: flex-start;
+
+}
+
+
+/* =====================================================
+   SIDEBAR
+   ===================================================== */
+
+.side-nav {
+
+    width: 220px;
+
+    min-width: 220px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+}
+
+
+.side-nav h3 {
+
+    margin-top: 0;
+
+    color: #1f4e79;
+
+}
+
+
+.side-nav a {
+
+    display: block;
+
+    padding: 10px;
+
+    margin: 0 0 8px 0;
+
+    border-radius: 6px;
+
+}
+
+
+.side-nav a:hover {
+
+    background-color: #eef3f8;
+
+    text-decoration: none;
+
+}
+
+
+/* =====================================================
+   MAIN DALAM PAGE LAYOUT
+   ===================================================== */
+
+.page-layout main {
+
+    flex: 1;
+
+    width: auto;
+
+    max-width: none;
+
+    margin: 0;
+
+}
+
+
+/* =====================================================
+   SIDEBAR KANAN
+   ===================================================== */
+
+.page-layout.right {
+
+    flex-direction: row-reverse;
+
+}
+
+
+/* =====================================================
+   EXPERIMENT BOX
+   ===================================================== */
+
+.experiment-box {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.experiment-box > div {
+
+    flex: 1;
+
+    min-width: 180px;
+
+    padding: 15px;
+
+    background-color: #eef3f8;
+
+    border-radius: 8px;
+
+}
+
+
+.experiment-box strong {
+
+    color: #1f4e79;
+
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact-nav {
+
+    text-align: center;
+
+}
+
+
+.contact-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.contact-item {
+
+    background-color: #f5f8fc;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
+
+
+.contact-item h3 {
+
+    margin-top: 0;
+
+    color: #1f4e79;
+
+}
+
+
+/* =====================================================
+   FORM
+   ===================================================== */
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+label {
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+}
+
+
+textarea {
+
+    resize: vertical;
+
+}
+
+
+button {
+
+    margin-top: 15px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #1f4e79;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: #163958;
+
+}
+
+
+/* =====================================================
+   CSS GRID - LAYOUT ALTERNATIF
+   ===================================================== */
+
+/*
+   Kalau ingin mencoba sidebar kiri
+   dengan CSS Grid, gunakan class:
+
+   <body class="grid-left">
+*/
+
+
+body.grid-left {
+
+    display: grid;
+
+    grid-template-columns:
+        220px 1fr;
+
+    grid-template-areas:
+
+        "header header"
+
+        "nav main"
+
+        "footer footer";
+
+}
+
+
+body.grid-left header {
+
+    grid-area: header;
+
+}
+
+
+body.grid-left nav {
+
+    grid-area: nav;
+
+}
+
+
+body.grid-left main {
+
+    grid-area: main;
+
+    width: auto;
+
+    max-width: none;
+
+    margin: 24px;
+
+}
+
+
+body.grid-left footer {
+
+    grid-area: footer;
+
+}
+
+
+body.grid-left nav a {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =====================================================
+   CSS GRID - SIDEBAR KANAN
+   ===================================================== */
+
+body.grid-right {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 220px;
+
+    grid-template-areas:
+
+        "header header"
+
+        "main nav"
+
+        "footer footer";
+
+}
+
+
+body.grid-right header {
+
+    grid-area: header;
+
+}
+
+
+body.grid-right nav {
+
+    grid-area: nav;
+
+}
+
+
+body.grid-right main {
+
+    grid-area: main;
+
+    width: auto;
+
+    max-width: none;
+
+    margin: 24px;
+
+}
+
+
+body.grid-right footer {
+
+    grid-area: footer;
+
+}
+
+
+body.grid-right nav a {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE / MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+
+    /* Navigation */
+
+    nav {
+
+        text-align: center !important;
+
+    }
+
+
+    nav a {
+
+        display: inline-block;
+
+        margin: 5px;
+
+    }
+
+
+    /* Main */
+
+    main {
+
+        width: 94%;
+
+    }
+
+
+    /* Table */
+
+    table {
+
+        font-size: 14px;
+
+    }
+
+
+    /* Flex sidebar menjadi atas */
+
+    .page-layout {
+
+        flex-direction: column;
+
+        width: 94%;
+
+    }
+
+
+    .page-layout.right {
+
+        flex-direction: column;
+
+    }
+
+
+    .side-nav {
+
+        width: 100%;
+
+        min-width: 0;
+
+    }
+
+
+    .page-layout main {
+
+        width: 100%;
+
+    }
+
+
+    /* Contact */
+
+    .contact-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* Experiment */
+
+    .experiment-box {
+
+        flex-direction: column;
+
+    }
+
+
+    .experiment-box > div {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE SMALL PHONE
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+
+    header {
+
+        padding: 18px 10px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    section {
+
+        padding: 15px;
+
+    }
+
+
+    table {
+
+        display: block;
+
+        overflow-x: auto;
+
+    }
+
+
+    nav a {
+
+        display: block;
+
+        margin: 7px 0;
+
+    }
+
+
+}
